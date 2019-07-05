@@ -1,15 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WTF: Co Ten Frontend?</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <h1>Hello world!</h1>
-  
-  <script src="js/main.js"></script>
+
+    <main class="grid">
+
+        <header class="header">
+            <h1>WTF: Co Ten Frontend?</h1>
+        </header>
+
+        <nav class="navigation">
+            <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">&#8801; Menu</button>
+            <ul class="navigation__list navigation__list--js">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="https://kursy.devstyle.pl/frontend/tydzien-i/">Tydzień I</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="https://kursy.devstyle.pl/frontend/tydzien-ii/">Tydzień II</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="https://kursy.devstyle.pl/frontend/tydzien-iii/">Tydzień III</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="https://kursy.devstyle.pl/frontend/tydzien-iv/">Tydzień IV</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="https://kursy.devstyle.pl/frontend/tydzien-v/">Tydzień V</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="https://kursy.devstyle.pl/frontend/tydzien-vi/">Tydzień VI</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="https://kursy.devstyle.pl/frontend/tydzien-vii/">Tydzień VII</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <h2 class="content__header">Plan kursu</h2>
+            <div class="content__grid">
+                <section class="week">
+                    <h3 class="week__header">Tydzień I (20.05.2019)</h3>
+                    <ul class="week__list">
+                        <li>Lekcja 01.01. Wstęp do kursu + zasady</li>
+                        <li>Lekcja 01.02. Czym jest frontend?</li>
+                        <li>Lekcja 01.03. Opis narzędzi i kont</li>
+                        <li>Lekcja 01.04. Różnice Mac / Windows / Linux</li>
+                        <li>Lekcja 01.05. Ścieżka rozwoju</li>
+                        <li>Lekcja 01.06. Mój pierwszy projekt!</li>
+                    </ul>
+                </section>
+                <section class="week">
+                    <h3 class="week__header">Tydzień II (27.05.2019)</h3>
+                    <ul class="week__list">
+                        <li>Lekcja 02.01. Tydzień II + rozwiązania tydzień I</li>
+                        <li>Lekcja 02.02. Warstwy strony internetowej</li>
+                        <li>Lekcja 02.03. WTF: HTML</li>
+                        <li>Lekcja 02.04. WTF: CSS</li>
+                        <li>Lekcja 02.05. Magia programowania</li>
+                        <li>Lekcja 02.06. DevTools: podglądamy!</li>
+                        <li>Lekcja 02.07. Tydzień II – prace domowe</li>
+                    </ul>
+                </section>
+                <section class="week">
+                    <h3 class="week__header">Tydzień III (3.06.2019)</h3>
+                    <ul class="week__list">
+                        <li>Lekcja 03.01. Tydzień III + rozwiązania tydzień II</li>
+                        <li>Lekcja 03.02. Kanban</li>
+                        <li>Lekcja 03.03. WTF: HTML II</li>
+                        <li>Lekcja 03.04. WTF: CSS II</li>
+                        <li>Lekcja 03.05. Jak działa Internet i przeglądarka</li>
+                        <li>Lekcja 03.06. WTF: JavaScript</li>
+                        <li>Lekcja 03.07. Terminal</li>
+                        <li>Lekcja 03.08. Prace domowe tydzień III</li>
+                    </ul>
+                </section>
+                <section class="week">
+                    <h3 class="week__header">Tydzień IV (10.06.2019)</h3>
+                    <ul class="week__list">
+                        <li>Lekcja 04.01. Tydzień IV + rozwiązania tydzień III</li>
+                        <li>Lekcja 04.02. Jest GIT!</li>
+                        <li>Lekcja 4.03. Upiększanie</li>
+                        <li>Lekcja 4.04.1 Życie w pudełku I</li>
+                        <li>Lekcja 4.04.2 Życie w pudełku II</li>
+                        <li>Lekcja 4.05. Block – Element – Modifier</li>
+                        <li>Lekcja 4.06. DOMowe przedszkole</li>
+                        <li>Lekcja 4.07. Dzień z życia frontendowca</li>
+                        <li>Lekcja 4.08. Prace domowe tydzień IV</li>
+                        <li>BONUS: zapis live Q&A</li>
+                    </ul>
+                </section>
+                <section class="week">
+                    <h3 class="week__header">Tydzień V (17.06.2019)</h3>
+                    <ul class="week__list">
+                        <li>Lekcja 5.01. Tydzień V + rozwiązania tydzień IV</li>
+                        <li>Lekcja 5.02. Logika w JS</li>
+                        <li>Lekcja 5.03. JavaScript: funkcje</li>
+                        <li>Lekcja 5.04. U mnie (nie) działa</li>
+                        <li>Lekcja 5.05. HTML: Listy, tabele, definicje</li>
+                        <li>Lekcja 5.06. Normalizacja vs reset</li>
+                        <li>Lekcja 5.07. Flexbox</li>
+                        <li>Lekcja 5.08. Tła</li>
+                        <li>Lekcja 5.09. Grafik cięcie – też zajęcie</li>
+                        <li>Lekcja 5.10. Prace domowe tydzień V</li>
+                    </ul>
+                </section>
+                <section class="week">
+                    <h3 class="week__header">Tydzień VI (24.06.2019)</h3>
+                    <ul class="week__list">
+                        <li>Lekcja 6.01. Tydzień VI + rozwiązania tydzień V</li>
+                        <li>Lekcja 6.02. Formularze</li>
+                        <li>Lekcja 6.03. CSS: Grid</li>
+                        <li>Lekcja 6.04. CSS: Media queries</li>
+                        <li>Lekcja 6.05. JS: Eventy</li>
+                        <li>Lekcja 6.06. Hamburger menu</li>
+                        <li>Lekcja 6.07. GitHub pages: statyczny hosting</li>
+                        <li>Lekcja 6.08. Prace domowe tydzień VI</li>
+                    </ul>
+                </section>
+                <section class="week">
+                    <h3 class="week__header">Tydzień VII (1.07.2019)</h3>
+                    <ul class="week__list">
+                        <li>Lekcja 7.01. Tydzień VII + rozwiązania tydzień VI</li>
+                        <li>Lekcja 7.02. JS: Obiekty, obiekty</li>
+                        <li>Lekcja 7.03. Pseudoelementy & Pseudoselektory</li>
+                        <li>Lekcja 7.04. SASS</li>
+                        <li>Lekcja 7.05. Node.js & NPM</li>
+                        <li>Lekcja 7.06. WTF GULP STARTER KIT</li>
+                        <li>Lekcja 7.07. Prace domowe tydzień VII</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>WTF: Co Ten Frontend?</p>
+        </footer>
+
+        <script src="js/main.js"></script>
+
+    </main>
+
 </body>
+
 </html>
