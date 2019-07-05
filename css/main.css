@@ -391,6 +391,8 @@ body {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr; }
   @media (max-width: 730px) {
+    .content__header {
+      text-align: center; }
     .content__grid {
       display: -ms-grid;
       display: grid;
