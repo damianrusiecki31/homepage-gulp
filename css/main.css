@@ -311,12 +311,108 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #2D2241; }
+  background: #1e1e1e; }
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "navigation" "content" "footer"; }
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  text-align: center;
+  color: #358cd6; }
+
+.navigation {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: navigation; }
+  .navigation__list {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .navigation__item {
+    display: block;
+    margin: 0 16px; }
+  .navigation__link {
+    color: #67cdfe; }
+    .navigation__link:hover {
+      color: #c586c0; }
+  @media (max-width: 730px) {
+    .navigation__switcher {
+      display: -ms-grid;
+      display: grid;
+      border: none;
+      background: none;
+      color: #67cdfe; }
+    .navigation__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      display: none; }
+      .navigation__list--visible {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+    .navigation__item {
+      margin: 16px; } }
+  @media (min-width: 731px) {
+    .navigation__switcher {
+      display: none; } }
+
+.content {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: content;
+  width: 100%;
+  max-width: 760px;
+  margin: auto;
+  padding-top: 16px; }
+  .content__header {
+    color: #ce9178; }
+  .content__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
+  @media (max-width: 730px) {
+    .content__grid {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
+
+.week__header {
+  color: #d7ba7d; }
+
+.week__list {
+  color: #fff;
+  padding-left: 20px; }
+
+@media (max-width: 730px) {
+  .week__header {
+    text-align: center; } }
+
+.footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  text-align: center;
+  color: #3ac9a2; }
 
 /*# sourceMappingURL=main.css.map */
