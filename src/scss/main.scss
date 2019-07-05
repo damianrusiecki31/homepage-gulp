@@ -83,6 +83,9 @@ body {
     grid-template-columns: 1fr 1fr;
   }
   @media (max-width: 730px) {
+    &__header {
+      text-align: center;
+      }
     &__grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -100,7 +103,7 @@ body {
   }
   @media (max-width: 730px) {
     &__header {
-      text-align: center;
+    text-align: center;
     }
   }
 }
