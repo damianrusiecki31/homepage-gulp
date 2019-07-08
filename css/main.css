@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -318,7 +319,8 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #1e1e1e; }
+  background: #1e1e1e;
+  font-family: 'Lato', sans-serif; }
 
 .grid {
   display: -ms-grid;
@@ -352,26 +354,27 @@ body {
     color: #67cdfe; }
     .navigation__link:hover {
       color: #c586c0; }
-  @media (max-width: 730px) {
-    .navigation__switcher {
-      display: -ms-grid;
-      display: grid;
-      border: none;
-      background: none;
-      color: #67cdfe; }
-    .navigation__list {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      display: none; }
-      .navigation__list--visible {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-    .navigation__item {
-      margin: 16px; } }
-  @media (min-width: 731px) {
+  @media (max-width: 845px) {
+    .navigation {
+      text-align: center; }
+      .navigation__switcher {
+        border: none;
+        background: none;
+        color: #67cdfe; }
+      .navigation__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        display: none; }
+        .navigation__list--visible {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          text-align: center; }
+      .navigation__item {
+        margin: 16px; } }
+  @media (min-width: 846px) {
     .navigation__switcher {
       display: none; } }
 
@@ -379,36 +382,38 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: content;
-  width: 100%;
-  max-width: 760px;
-  margin: auto;
-  padding-top: 16px; }
+  margin: auto; }
   .content__header {
-    color: #ce9178; }
+    color: #ce9178;
+    text-align: center; }
   .content__grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr; }
-  @media (max-width: 730px) {
-    .content__header {
-      text-align: center; }
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 16px;
+    text-align: center; }
+  @media (min-width: 468px) {
     .content__grid {
       display: -ms-grid;
       display: grid;
-      -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr; } }
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      text-align: left; } }
 
-.week__header {
-  color: #d7ba7d; }
-
-.week__list {
-  color: #fff;
-  padding-left: 20px; }
-
-@media (max-width: 730px) {
-  .week__header {
-    text-align: center; } }
+@media (min-width: 468px) and (min-width: 768px) {
+  .content__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left; } }
+  .content .week__header {
+    color: #d7ba7d; }
+  .content .week__list {
+    color: #fff;
+    padding: 0;
+    list-style-type: none; }
 
 .footer {
   -ms-grid-row: 4;
