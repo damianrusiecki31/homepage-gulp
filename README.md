@@ -1,4 +1,4 @@
-![homepage_screenshot](/screenshoot/wtf_homepage_gulp.png)
+![homepage_screenshot](/screenshot/wtf_homepage_gulp.png)
 
 
 # Mój homepage
